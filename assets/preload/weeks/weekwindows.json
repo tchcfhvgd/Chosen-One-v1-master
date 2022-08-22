@@ -1,0 +1,22 @@
+{
+	"songs": [
+		["Adobe", "tco1", [146, 113, 253]],
+		["Victim", "tco", [146, 113, 253]],
+		["End Process", "tdl", [146, 113, 253]]
+	],
+
+	"weekCharacters": [
+		"",
+		"bf",
+		"gf"
+	],
+	"weekBackground": "animStage",
+
+	"storyName": "",
+	"weekBefore": "weekwindows",
+	"weekName": "Week Windows",
+	"startUnlocked": true,
+
+	"hideStoryMode": false,
+	"hideFreeplay": true
+}

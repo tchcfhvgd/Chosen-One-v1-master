@@ -724,12 +724,14 @@ class PreferencesSubstate extends MusicBeatSubstate
 		'Downscroll',
 		'Middlescroll',
 		'Ghost Tapping',
+		'Underlay Transparency',
 		'Note Delay',
 		'Note Splashes',
 		'Hide HUD',
 		'Hide Song Length',
 		'Flashing Lights',
-		'Camera Zooms'
+		'Camera Zooms',
+		'Camera Movement'
 		#if !mobile
 		,'FPS Counter'
 		#end
@@ -904,9 +906,15 @@ class PreferencesSubstate extends MusicBeatSubstate
 
 					case 'Ghost Tapping':
 						ClientPrefs.ghostTapping = !ClientPrefs.ghostTapping;
+						
+					case 'Underlay Transparency':
+						ClientPrefs.transparency = !ClientPrefs.transparency;
 
 					case 'Camera Zooms':
 						ClientPrefs.camZooms = !ClientPrefs.camZooms;
+					
+					case 'Camera Movement':
+						ClientPrefs.movecam = !ClientPrefs.movecam;
 
 					case 'Hide HUD':
 						ClientPrefs.hideHud = !ClientPrefs.hideHud;
@@ -996,6 +1004,8 @@ class PreferencesSubstate extends MusicBeatSubstate
 				daText = "If checked, hides Opponent's notes and your notes get centered.";
 			case 'Ghost Tapping':
 				daText = "If checked, you won't get misses from pressing keys\nwhile there are no notes able to be hit.";
+			case 'Underlay Transparency':
+				daText = "If checked, you won't get misses from pressing keys\nwhile there are no notes able to be hit.";
 			case 'Swearing':
 				daText = "If unchecked, your mom won't be angry at you.";
 			case 'Violence':
@@ -1006,6 +1016,8 @@ class PreferencesSubstate extends MusicBeatSubstate
 				daText = "Uncheck this if you're sensitive to flashing lights!";
 			case 'Camera Zooms':
 				daText = "If unchecked, the camera won't zoom in on a beat hit.";
+			case 'Camera Movement':
+				daText = "If unchecked, the camera won't move when a character sing.";
 			case 'Hide HUD':
 				daText = "If checked, hides most HUD elements.";
 			case 'Hide Song Length':
@@ -1070,12 +1082,16 @@ class PreferencesSubstate extends MusicBeatSubstate
 						daValue = ClientPrefs.middleScroll;
 					case 'Ghost Tapping':
 						daValue = ClientPrefs.ghostTapping;
+					case 'Underlay Transparency':
+						daValue = ClientPrefs.transparency;
 					case 'Swearing':
 						daValue = ClientPrefs.cursing;
 					case 'Violence':
 						daValue = ClientPrefs.violence;
 					case 'Camera Zooms':
 						daValue = ClientPrefs.camZooms;
+					case 'Camera Movement':
+						daValue = ClientPrefs.movecam;
 					case 'Hide HUD':
 						daValue = ClientPrefs.hideHud;
 					case 'Persistent Cached Data':

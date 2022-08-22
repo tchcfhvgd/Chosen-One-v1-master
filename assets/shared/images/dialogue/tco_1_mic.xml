@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="tco_1_mic.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="tco10000" x="0" y="0" width="512" height="575"/>
+	<SubTexture name="tco10001" x="0" y="0" width="512" height="575"/>
+	<SubTexture name="tco10002" x="0" y="0" width="512" height="575"/>
+	<SubTexture name="tco10003" x="0" y="0" width="512" height="575"/>
+	<SubTexture name="tco10004" x="0" y="0" width="512" height="575"/>
+	<SubTexture name="tco10005" x="0" y="0" width="512" height="575"/>
+	<SubTexture name="tco10006" x="0" y="0" width="512" height="575"/>
+	<SubTexture name="tco10007" x="0" y="0" width="512" height="575"/>
+</TextureAtlas>

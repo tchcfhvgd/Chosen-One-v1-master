@@ -1,0 +1,53 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.05,
+			"portrait": "tco_1",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "How'd you get here?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "bep bop bep"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "skeed bop baap"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "tco_think",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "wha- a rap battle?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "beep"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "tco_mic",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Hm, I guess I could give it a try."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "orange",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "WOOOHOO YOU GOT THIS!"
+		}
+	]
+}

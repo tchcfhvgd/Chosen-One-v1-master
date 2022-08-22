@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="TheBoys.png">
+	<!-- Created with Adobe Animate version 21.0.5.40714 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="TheBoys0000" x="25" y="25" width="615" height="349" frameX="0" frameY="-23" frameWidth="615" frameHeight="373"/>
+	<SubTexture name="TheBoys0001" x="665" y="25" width="612" height="354" frameX="-2" frameY="-18" frameWidth="615" frameHeight="373"/>
+	<SubTexture name="TheBoys0002" x="1302" y="25" width="609" height="358" frameX="-4" frameY="-15" frameWidth="615" frameHeight="373"/>
+	<SubTexture name="TheBoys0003" x="25" y="408" width="607" height="366" frameX="-6" frameY="-7" frameWidth="615" frameHeight="373"/>
+	<SubTexture name="TheBoys0004" x="657" y="408" width="606" height="371" frameX="-6" frameY="-2" frameWidth="615" frameHeight="373"/>
+	<SubTexture name="TheBoys0005" x="1288" y="408" width="606" height="373" frameX="-6" frameY="0" frameWidth="615" frameHeight="373"/>
+	<SubTexture name="TheBoys0006" x="25" y="806" width="606" height="373" frameX="-6" frameY="0" frameWidth="615" frameHeight="373"/>
+	<SubTexture name="TheBoys0007" x="656" y="806" width="606" height="373" frameX="-6" frameY="0" frameWidth="615" frameHeight="373"/>
+	<SubTexture name="TheBoys0008" x="1287" y="806" width="606" height="373" frameX="-6" frameY="0" frameWidth="615" frameHeight="373"/>
+	<SubTexture name="TheBoys0009" x="25" y="1204" width="606" height="373" frameX="-6" frameY="0" frameWidth="615" frameHeight="373"/>
+	<SubTexture name="TheBoys0010" x="1287" y="806" width="606" height="373" frameX="-6" frameY="0" frameWidth="615" frameHeight="373"/>
+	<SubTexture name="TheBoys0011" x="25" y="1204" width="606" height="373" frameX="-6" frameY="0" frameWidth="615" frameHeight="373"/>
+	<SubTexture name="TheBoys0012" x="1287" y="806" width="606" height="373" frameX="-6" frameY="0" frameWidth="615" frameHeight="373"/>
+	<SubTexture name="TheBoys0013" x="25" y="1204" width="606" height="373" frameX="-6" frameY="0" frameWidth="615" frameHeight="373"/>
+</TextureAtlas>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="orange_cheer.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="orange0000" x="0" y="0" width="512" height="575"/>
+	<SubTexture name="orange0001" x="0" y="0" width="512" height="575"/>
+	<SubTexture name="orange0002" x="0" y="0" width="512" height="575"/>
+	<SubTexture name="orange0003" x="0" y="0" width="512" height="575"/>
+	<SubTexture name="orange0004" x="0" y="0" width="512" height="575"/>
+	<SubTexture name="orange0005" x="0" y="0" width="512" height="575"/>
+	<SubTexture name="orange0006" x="0" y="0" width="512" height="575"/>
+	<SubTexture name="orange0007" x="0" y="0" width="512" height="575"/>
+</TextureAtlas>

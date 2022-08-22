@@ -20,7 +20,8 @@ class CoolUtil
 	public static var difficultyStuff:Array<Dynamic> = [
 		['Easy', '-easy'],
 		['Normal', ''],
-		['Hard', '-hard']
+		['Hard', '-hard'],
+		['Insane', '-insane']
 	];
 
 	public static function difficultyString():String

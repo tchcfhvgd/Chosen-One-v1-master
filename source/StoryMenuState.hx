@@ -34,6 +34,8 @@ class StoryMenuState extends MusicBeatState
 
 	var txtWeekTitle:FlxText;
 	var bgSprite:FlxSprite;
+	
+	var isCutscene:Bool = false;
 
 	private static var curWeek:Int = 0;
 
@@ -295,6 +297,19 @@ class StoryMenuState extends MusicBeatState
 			PlayState.campaignScore = 0;
 			PlayState.campaignMisses = 0;
 			new FlxTimer().start(1, function(tmr:FlxTimer)
+			
+			if (curWeek == 0)
+			{
+					var video:MP4Handler = new MP4Handler();
+
+                    video.playMP4(Paths.video('cutscenes1'));
+                    video.finishCallback = function()
+                    {
+	                   LoadingState.loadAndSwitchState(new PlayState());
+                    }
+				isCutscene = true;
+			}
+			else
 			{
 				LoadingState.loadAndSwitchState(new PlayState(), true);
 				FreeplayState.destroyFreeplayVocals();

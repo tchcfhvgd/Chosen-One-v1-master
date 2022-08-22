@@ -56,7 +56,7 @@ class FreeplayState extends MusicBeatState
 		DiscordClient.changePresence("In the Menus", null);
 		#end
 
-		for (i in 0...WeekData.weeksList.length) {
+		/*for (i in 0...WeekData.weeksList.length) {
 			var leWeek:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[i]);
 			var leSongs:Array<String> = [];
 			var leChars:Array<String> = [];
@@ -83,6 +83,16 @@ class FreeplayState extends MusicBeatState
 				var songArray:Array<String> = initSonglist[i].split(":");
 				addSong(songArray[0], 0, songArray[1], Std.parseInt(songArray[2]));
 			}
+		}*/
+
+		addSong('Adobe', 0, 'tco', 0xFFE8E8E8);
+		addSong('Victim', 0, 'tco', 0xFFF8B946);
+		addSong('End-Process', 0, 'tdl', 0xFFE55656);
+		
+		if (ClientPrefs.alanunlocked)
+		{
+		addSong('Alan', 1, 'alan', 0xFFFFFFFF);
+		addSong('Diva', 1, 'tco', 0xFF84EB5B);
 		}
 
 		// LOAD MUSIC
@@ -316,12 +326,17 @@ class FreeplayState extends MusicBeatState
 	function changeDiff(change:Int = 0)
 	{
 		curDifficulty += change;
-
-		if (curDifficulty < 0)
-			curDifficulty = CoolUtil.difficultyStuff.length-1;
-		if (curDifficulty >= CoolUtil.difficultyStuff.length)
-			curDifficulty = 0;
-
+		
+		switch (songs[curSelected].songName.toLowerCase())
+		{
+			default:
+				 if (curDifficulty < 0)
+			         curDifficulty = CoolUtil.difficultyStuff.length-1;
+		         if (curDifficulty >= CoolUtil.difficultyStuff.length)
+			         curDifficulty = 0;
+				
+		}
+			
 		#if !switch
 		intendedScore = Highscore.getScore(songs[curSelected].songName, curDifficulty);
 		intendedRating = Highscore.getRating(songs[curSelected].songName, curDifficulty);
