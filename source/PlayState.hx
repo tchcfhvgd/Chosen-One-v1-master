@@ -1322,7 +1322,7 @@ class PlayState extends MusicBeatState
 			bg.cameras = [camHUD];
 			add(bg);
 
-			(new MP4Handler(fileName)).finishCallback = function() {
+			(new FlxVideo(fileName)).finishCallback = function() {
 				remove(bg);
 				if(endingSong) {
 					endSong();
