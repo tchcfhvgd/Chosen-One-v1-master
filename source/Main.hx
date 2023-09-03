@@ -30,7 +30,8 @@ class Main extends Sprite
 	public function new()
 	{
 		super();
-
+                SUtil.gameCrashCheck();
+		
 		if (stage != null)
 		{
 			init();
@@ -70,6 +71,7 @@ class Main extends Sprite
 		#end
 
 		Paths.getModFolders();
+		SUtil.doTheCheck();
 		ClientPrefs.startControls();
 		addChild(new FlxGame(gameWidth, gameHeight, initialState, zoom, framerate, framerate, skipSplash, startFullscreen));
 
