@@ -835,7 +835,7 @@ class PlayState extends MusicBeatState
 			luaFile = Paths.modFolders(luaFile);
 			doPush = true;
 		} else {
-			luaFile = Paths.getPreloadPath(luaFile);
+			luaFile = SUtil.getPath() + Paths.getPreloadPath(luaFile);
 			if(FileSystem.exists(luaFile)) {
 				doPush = true;
 			}
@@ -1322,7 +1322,7 @@ class PlayState extends MusicBeatState
 			bg.cameras = [camHUD];
 			add(bg);
 
-			(new FlxVideo(fileName)).finishCallback = function() {
+			(new MP4Handler(fileName)).finishCallback = function() {
 				remove(bg);
 				if(endingSong) {
 					endSong();
