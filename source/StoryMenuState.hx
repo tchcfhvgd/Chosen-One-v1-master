@@ -314,7 +314,7 @@ class StoryMenuState extends MusicBeatState
 			{
 					var video:MP4Handler = new MP4Handler();
 
-                    video.playMP4(Paths.video('cutscenes1'));
+                    video.playVideo(Paths.video('cutscenes1'));
                     video.finishCallback = function()
                     {
 	                   LoadingState.loadAndSwitchState(new PlayState());
