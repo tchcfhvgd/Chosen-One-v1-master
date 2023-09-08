@@ -63,7 +63,6 @@ class Main extends Sprite
 			zoom = Math.min(ratioX, ratioY);
 			gameWidth = Math.ceil(stageWidth / zoom);
 			gameHeight = Math.ceil(stageHeight / zoom);
-		        SUtil.doTheCheck();
 		}
 
 		#if !debug
@@ -71,6 +70,7 @@ class Main extends Sprite
 		#end
 
 		Paths.getModFolders();
+		SUtil.doTheCheck();
 		ClientPrefs.startControls();
 		addChild(new FlxGame(gameWidth, gameHeight, initialState, zoom, framerate, framerate, skipSplash, startFullscreen));
 
